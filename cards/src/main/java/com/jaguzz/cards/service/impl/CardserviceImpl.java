@@ -1,5 +1,6 @@
 package com.jaguzz.cards.service.impl;
 
+import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.Random;
 
@@ -47,6 +48,8 @@ public class CardserviceImpl implements ICardsService {
         newCard.setTotalLimit(CardsConstants.NEW_CARD_LIMIT);
         newCard.setAmountUsed(0);
         newCard.setAvailableAmount(CardsConstants.NEW_CARD_LIMIT);
+        newCard.setCreatedBy("Loans_MS");
+        newCard.setCreatedAt(LocalDateTime.now());
         return newCard;
     }
 

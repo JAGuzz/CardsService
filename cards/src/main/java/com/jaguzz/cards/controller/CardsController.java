@@ -35,7 +35,7 @@ import org.springframework.web.bind.annotation.RequestParam;
         description = "CRUD REST APIs in EazyBank to CREATE, UPDATE, FETCH AND DELETE loan details"
 )
 @RestController
-@RequestMapping(path = "/loans", produces = {MediaType.APPLICATION_JSON_VALUE})
+@RequestMapping(path = "/cards", produces = {MediaType.APPLICATION_JSON_VALUE})
 @AllArgsConstructor
 @Validated
 public class CardsController {
