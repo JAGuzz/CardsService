@@ -84,25 +84,14 @@
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
+			
 			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
 				<version>3.4.5</version>
 				<configuration>
 					<to>
-						<image>jaguzz98/${project.artifactId}:V1.01</image>
+						<image>jaguzz98/${project.artifactId}:V2.00</image>
 					</to>
 				</configuration>
 			</plugin>
